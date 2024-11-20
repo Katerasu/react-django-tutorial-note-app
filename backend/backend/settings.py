@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -144,5 +145,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CROS_ALLOW_ALL_ORIGINS = True
-CROS_ALLOWS_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWS_CREDENTIALS = True
